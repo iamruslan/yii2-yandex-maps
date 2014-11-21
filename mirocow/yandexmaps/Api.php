@@ -86,8 +86,8 @@ class Api extends Component
             $this->api_version
 			.'/?lang=' . $this->language
 			. '&load=' . $this->packages;
-		
-		Yii::$app->view->registerJsFile($url, [], ['position' => View::POS_END]);
+
+        Yii::$app->view->registerJsFile($url, ['position' => View::POS_END], []);
 	}
 
 	/**
